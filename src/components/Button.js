@@ -7,11 +7,11 @@ class Button extends React.Component {
 
 
     render() {
-        console.log(this.context);
-        
+        const text = this.context === 'english' ? 'Submit' : 'Voorleggen';
+
         return (
             <button className="ui button primary">
-                Submit
+                {text}
             </button>
         );
     }
