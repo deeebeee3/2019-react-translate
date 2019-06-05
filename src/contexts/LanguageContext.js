@@ -16,7 +16,7 @@ export class LanguageStore extends React.Component {
   render() {
     return (
       // value is a NEW object with our state and onLanguageChange callback function
-      <Context.Provider value={{ ...this.state, onLanguageChange }}> 
+      <Context.Provider value={{ ...this.state, onLanguageChange: this.onLanguageChange }}> 
 
         {/* children is whatever nested jsx / components that our LanguageStore will wrap */}
         {this.props.children}
