@@ -29,6 +29,3 @@ export class LanguageStore extends React.Component {
 }
 
 export default Context;
-
-
-//
