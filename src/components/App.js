@@ -18,11 +18,13 @@ class App extends React.Component {
                     <i className="flag nl" onClick={() => this.onLanguageChange('dutch')} />
                 </div>
 
+                {/* Provider updates the value of the context object (/contexts/LanguageContext) to this.state.language */}
+                {/* Button and Field will rerender when they see value of context object has changed */}
                 <LanguageContext.Provider value={this.state.language}>
                     <UserCreate />
                 </LanguageContext.Provider>
-                
 
+                
             </div>
         )
     }
